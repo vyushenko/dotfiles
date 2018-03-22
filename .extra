@@ -181,14 +181,12 @@ ii() {
 http_headers () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
 http_debug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
-# Git credentials
-GIT_AUTHOR_NAME="Victor Yushenko"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-
 # Add git completion
 if [ -f /etc/bash_completion.d/git ]; then
         source /etc/bash_completion.d/git;
 fi;
+
+#IDE
+alias a="atom ."
 
 source ~/.extra_local

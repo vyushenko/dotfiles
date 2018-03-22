@@ -1,40 +1,9 @@
+# Git credentials
+GIT_AUTHOR_NAME="Victor Yushenko"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+
 GIT_AUTHOR_EMAIL="vyushenko@rubiconproject.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 git config --global user.signingkey "$GIT_AUTHOR_EMAIL"
-
-# System aliases
-alias dev0='ssh frpd-ufe9000.lab1.fanops.net'
-alias dev1='ssh frpd-ufe9001.lab1.fanops.net'
-alias dev2='ssh frpd-ufe9002.lab1.fanops.net'
-alias dev3='ssh frpd-ufe9003.lab1.fanops.net'
-
-alias ffront0='ssh frpp-uff0000.las1.fanops.net'
-alias ffront1='ssh frpp-uff0001.las1.fanops.net'
-alias fback0='ssh frpp-ubf0000.las1.fanops.net'
-alias fback1='ssh frpp-ubf0001.las1.fanops.net'
-
-alias front0='ssh frpp-ufe0000.las1.fanops.net'
-alias front1='ssh frpp-ufe0001.las1.fanops.net'
-alias front2='ssh frpp-ufe0002.las1.fanops.net'
-alias front3='ssh frpp-ufe0003.las1.fanops.net'
-alias front4='ssh frpp-ufe0004.las1.fanops.net'
-
-alias back0='ssh frpp-ube0000.las1.fanops.net'
-alias back1='ssh frpp-ube0001.las1.fanops.net'
-alias back2='ssh frpp-ube0002.las1.fanops.net'
-alias back3='ssh frpp-ube0003.las1.fanops.net'
-alias back4='ssh frpp-ube0004.las1.fanops.net'
-alias back5='ssh frpp-ube0005.las1.fanops.net'
-
-alias arm0='ssh frpp-arm9000.las1.fanops.net'
-alias arm1='ssh frpp-arm9001.las1.fanops.net'
-
-alias java0='ssh frpp-jsl9000.las1.fanops.net'
-alias java1='ssh frpp-jsl9001.las1.fanops.net'
-alias java2='ssh frpp-jsl9002.las1.fanops.net'
-
-alias javaqa0='ssh frpq-jsl9000.lab1.fanops.net'
-alias javaqa1='ssh frpq-jsl9001.lab1.fanops.net'
-
-alias javadev='ssh frpd-jsl9000.lab1.fanops.net'
