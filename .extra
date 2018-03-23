@@ -186,7 +186,10 @@ if [ -f /etc/bash_completion.d/git ]; then
         source /etc/bash_completion.d/git;
 fi;
 
-#IDE
+# Show man pages in a new window
+function man() { open x-man-page://$@ ; }
+
+# IDE shortcuts
 alias a="atom ."
 
 source ~/.extra_local
