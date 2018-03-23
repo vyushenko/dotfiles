@@ -191,5 +191,7 @@ function man() { open x-man-page://$@ ; }
 
 # IDE shortcuts
 alias a="atom ."
+# /usr/local/bin/idea
+# /usr/local/bin/charm
 
 source ~/.extra_local
